@@ -943,12 +943,12 @@ a4 { font-weight:bold;
 	</div>
 
 <!--방향 -->
-<a href="https://seoojing.github.io/popol/">
+<a href="https://seoojing.github.io/moya/">
 	<div id="rig">
 		<img src="orhere.png">
 	</div>
 </a>
-<a href="https://seoojing.github.io/new_popol_front/">
+<a href="https://seoojing.github.io/popo/">
 	<div id="turn">
 		<img src="turn.png">
 	</div>
@@ -958,7 +958,7 @@ a4 { font-weight:bold;
 		<img src="turn.png">
 	</div>
 
-<a href="https://seoojing.github.io/hall6/">
+<a href="https://seoojing.github.io/bab/">
 	<div id="fronts">
 		<img src="there.png">
 	</div>
@@ -967,6 +967,9 @@ a4 { font-weight:bold;
 		<img src="there.png">
 	</div>
 <!--설명글 -->
+	<audio id="beep">
+		<source src="beep.mp3" type="audio/mpeg">
+	</audio>
 
 <div class="trophy" style="cursor: url(eyes.png), pointer" id="content3_img">
  <img src='blank.png' width='100%' height='100%'>
@@ -1400,12 +1403,13 @@ function lookDiv4 (){
 			soun11.style.display = "none";
 			music.style.display = "inline";
 			musi.style.display = "inline";
-			self.setTimeout("lookDiv4()",800);
+			self.setTimeout("lookDiv4()",700);
 		on = true;
 			}
 
 
-
+	soun11.onclick = function(){
+		beep.play();}	
 
 	soun6.onclick = function(){
 		click.play();
@@ -1596,7 +1600,7 @@ function lookDiv4 (){
 			soun9.style.display = "none";
 			soun10.style.display = "none";
 			soun11.style.display = "none";
-			self.setTimeout("lookDiv4()",2000);
+			self.setTimeout("lookDiv4()",700);
 			bx.style.display = "inline";
 			flashlight.style.display = "inline";
 			foo.style.display = "inline";
